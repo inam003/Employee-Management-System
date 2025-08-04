@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Calendar, FileText, Home } from "lucide-react";
+import { Calendar, Clock, Home } from "lucide-react";
 import { NavUser } from "@/components/nav-user";
 import {
   Sidebar,
@@ -29,9 +29,9 @@ const data = {
       icon: Calendar,
     },
     {
-      title: "Documents",
-      url: "/employee/dashboard/documents",
-      icon: FileText,
+      title: "Attendance",
+      url: "/employee/dashboard/attendance",
+      icon: Clock,
     },
   ],
 };

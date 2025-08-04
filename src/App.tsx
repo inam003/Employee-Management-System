@@ -4,12 +4,12 @@ import SignUpPage from "./pages/signup/SignUpPage";
 import Home from "./pages/dashboards/admin/home/Home";
 import Employees from "./pages/dashboards/admin/employees/Employees";
 import LeaveRequest from "./pages/dashboards/admin/leave_request/LeaveRequest";
-import Documents from "./pages/dashboards/admin/documents/Documents";
 import AdminDashboard from "./pages/dashboards/admin/AdminDashboard";
 import EmployeeDashboard from "./pages/dashboards/employee/EmployeeDashboard";
 import EmployeeHome from "./pages/dashboards/employee/home/EmployeeHome";
 import EmployeeLeaveRequest from "./pages/dashboards/employee/leave_request/EmployeeLeaveRequest";
-import EmployeeDocuments from "./pages/dashboards/employee/documents/EmployeeDocuments";
+import Attendance from "./pages/dashboards/admin/attendance/Attendance";
+import EmployeeAttendance from "./pages/dashboards/employee/attendance/EmployeeAttendance";
 
 function App() {
   return (
@@ -24,14 +24,14 @@ function App() {
           <Route index element={<Home />} />
           <Route path="employees" element={<Employees />} />
           <Route path="leave-request" element={<LeaveRequest />} />
-          <Route path="documents" element={<Documents />} />
+          <Route path="attendance" element={<Attendance />} />
         </Route>
 
         {/* Employee Dashboard */}
         <Route path="/employee/dashboard" element={<EmployeeDashboard />}>
           <Route index element={<EmployeeHome />} />
           <Route path="leave-request" element={<EmployeeLeaveRequest />} />
-          <Route path="documents" element={<EmployeeDocuments />} />
+          <Route path="attendance" element={<EmployeeAttendance />} />
         </Route>
       </Routes>
     </>

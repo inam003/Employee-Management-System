@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Calendar, FileText, Home, Users } from "lucide-react";
+import { Calendar, Clock, Home, Users } from "lucide-react";
 import { NavUser } from "@/components/nav-user";
 import { AdminLogo } from "@/components/admin/admin-logo";
 import {
@@ -34,9 +34,9 @@ const data = {
       icon: Calendar,
     },
     {
-      title: "Documents",
-      url: "/admin/dashboard/documents",
-      icon: FileText,
+      title: "Attendance",
+      url: "/admin/dashboard/attendance",
+      icon: Clock,
     },
   ],
 };
