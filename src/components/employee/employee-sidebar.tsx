@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Calendar, Clock, Home } from "lucide-react";
-import { NavUser } from "@/components/nav-user";
 import {
   Sidebar,
   SidebarContent,
@@ -8,14 +7,15 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
-import { NavMain } from "@/components/nav-main";
 import { EmployeeLogo } from "./employee-logo";
+import { EmployeeFooter } from "./employee-footer";
+import { NavEmployee } from "./nav-employee";
 
 const data = {
   user: {
-    name: "user",
-    email: "user@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "employee",
+    email: "employee@example.com",
+    avatar: "https://github.com/shadcn.png",
   },
   menu: [
     {
@@ -45,10 +45,10 @@ export function EmployeeSidebar({
         <EmployeeLogo />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.menu} />
+        <NavEmployee items={data.menu} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <EmployeeFooter user={data.user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>

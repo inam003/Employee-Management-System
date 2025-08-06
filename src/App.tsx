@@ -10,6 +10,8 @@ import EmployeeHome from "./pages/dashboards/employee/home/EmployeeHome";
 import EmployeeLeaveRequest from "./pages/dashboards/employee/leave_request/EmployeeLeaveRequest";
 import Attendance from "./pages/dashboards/admin/attendance/Attendance";
 import EmployeeAttendance from "./pages/dashboards/employee/attendance/EmployeeAttendance";
+import AdminProfile from "./pages/dashboards/admin/profile/AdminProfile";
+import EmployeeProfile from "./pages/dashboards/employee/profile/EmployeeProfile";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
           <Route path="employees" element={<Employees />} />
           <Route path="leave-request" element={<LeaveRequest />} />
           <Route path="attendance" element={<Attendance />} />
+          <Route path="profile" element={<AdminProfile />} />
         </Route>
 
         {/* Employee Dashboard */}
@@ -32,6 +35,7 @@ function App() {
           <Route index element={<EmployeeHome />} />
           <Route path="leave-request" element={<EmployeeLeaveRequest />} />
           <Route path="attendance" element={<EmployeeAttendance />} />
+          <Route path="profile" element={<EmployeeProfile />} />
         </Route>
       </Routes>
     </>
