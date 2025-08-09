@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router";
 import LoginPage from "./pages/login/LoginPage";
 import SignUpPage from "./pages/signup/SignUpPage";
-import Home from "./pages/dashboards/admin/home/Home";
+import AdminHome from "./pages/dashboards/admin/home/AdminHome";
 import Employees from "./pages/dashboards/admin/employees/Employees";
 import LeaveRequest from "./pages/dashboards/admin/leave_request/LeaveRequest";
 import AdminDashboard from "./pages/dashboards/admin/AdminDashboard";
@@ -23,7 +23,7 @@ function App() {
 
         {/* Admin Dashboard */}
         <Route path="/admin/dashboard" element={<AdminDashboard />}>
-          <Route index element={<Home />} />
+          <Route index element={<AdminHome />} />
           <Route path="employees" element={<Employees />} />
           <Route path="leave-request" element={<LeaveRequest />} />
           <Route path="attendance" element={<Attendance />} />

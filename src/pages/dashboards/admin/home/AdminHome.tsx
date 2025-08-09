@@ -1,11 +1,11 @@
-import { AnalyticsCards } from "@/components/employee/analyticsCards";
-import RecentLeaves from "@/components/employee/recent-leaves";
+import { AnalyticsCards } from "@/components/admin/analyticsCards";
+import LeaveRequests from "@/components/admin/leave-requests";
 
-const EmployeeHome = () => {
+const AdminHome = () => {
   return (
     <div className="flex flex-col gap-8">
       <h1 className="text-4xl font-bold text-blue-600 dark:text-white">
-        My Dashboard
+        Admin Dashboard
       </h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -13,10 +13,10 @@ const EmployeeHome = () => {
       </div>
 
       <div>
-        <RecentLeaves />
+        <LeaveRequests />
       </div>
     </div>
   );
 };
 
-export default EmployeeHome;
+export default AdminHome;

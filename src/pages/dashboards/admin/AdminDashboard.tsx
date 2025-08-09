@@ -25,7 +25,7 @@ export default function AdminDashboard() {
             <ModeToggle />
           </div>
         </header>
-        <div className="p-4">
+        <div className="py-4 px-6">
           <Outlet />
         </div>
       </SidebarInset>

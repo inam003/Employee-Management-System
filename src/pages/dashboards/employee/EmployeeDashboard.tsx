@@ -13,7 +13,7 @@ export default function EmployeeDashboard() {
     <SidebarProvider>
       <EmployeeSidebar />
       <SidebarInset>
-        <header className="flex justify-between border-b border-gray-900 h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+        <header className="flex justify-between border-b dark:border-gray-900 h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
           <div className="flex items-center gap-2 px-4">
             <SidebarTrigger className="-ml-1" />
             <Separator
@@ -25,7 +25,7 @@ export default function EmployeeDashboard() {
             <ModeToggle />
           </div>
         </header>
-        <div className="p-4">
+        <div className="p-4 px-6">
           <Outlet />
         </div>
       </SidebarInset>

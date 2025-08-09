@@ -5,7 +5,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
 import { cn } from "@/lib/utils";
 
 export function NavEmployee({
@@ -18,7 +18,7 @@ export function NavEmployee({
   }[];
 }) {
   return (
-    <SidebarGroup>
+    <SidebarGroup className="p-0 pt-3">
       <SidebarMenu>
         {items.map((item) => (
           <NavLink to={item.url} key={item.title} end>
@@ -27,8 +27,10 @@ export function NavEmployee({
                 <SidebarMenuButton
                   tooltip={item.title}
                   className={cn(
-                    "transition-colors",
-                    isActive ? "bg-blue-600 text-white hover:bg-blue-700" : ""
+                    "transition-colors px-3 py-5 rounded-none",
+                    isActive
+                      ? "bg-blue-600 hover:bg-blue-700 text-white hover:text-white dark:hover:text-white"
+                      : ""
                   )}
                 >
                   {item.icon && <item.icon />}
